@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pastelblue">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragmentRV"
+        android:layout_width="351dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/confirmFragmentBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/loginbutton"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Purchase"
+        android:textAllCaps="false"
+        android:textColor="@color/almostwhite"
+        app:layout_constraintBottom_toTopOf="@+id/textView19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentRV"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="116dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="185dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentRV" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="117dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Total price: "
+        android:textColor="@color/almostwhite"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/confirmFragmentBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.255"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentRV"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <TextView
+        android:id="@+id/totalPrice"
+        android:layout_width="140dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="41dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Total"
+        android:textColor="@color/almostwhite"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/confirmFragmentBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentRV"
+        app:layout_constraintVertical_bias="0.4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
